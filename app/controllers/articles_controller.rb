@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.save
 
-    # redirect_to task_path(@task)
+    redirect_to article_path(@article)
   end
 
   def edit
@@ -25,13 +25,13 @@ class ArticlesController < ApplicationController
   def update
     @article.update(article_params)
 
-    # redirect_to task_path(@task)
+    redirect_to article_path(@article)
   end
 
   def destroy
     @article.destroy
 
-    # redirect_to tasks_path
+    redirect_to article_path(@article)
   end
 
   private
