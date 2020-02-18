@@ -7,10 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+Article.destroy_all
 10.times do
   article = Article.new(
     title: Faker::Lorem.sentence(word_count: 5),
-    content: Faker::Lorem.paragraph(sentence_count: 7)
+    content: Faker::Lorem.paragraph(sentence_count: 40)
   )
   article.save
 end
