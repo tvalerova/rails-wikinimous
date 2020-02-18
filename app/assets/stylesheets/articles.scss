@@ -2,5 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
-  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #CDCDCD;
+}
+
+h2 a{
+  text-decoration: none;
+  color: #3D2B3D;
+  font-weight: 500;
+}
+
+h2 a:hover{
+  color: #648381;
+}
+
+p{
+  color: #635D5C;
 }
